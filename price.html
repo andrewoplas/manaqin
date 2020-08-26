@@ -67,9 +67,9 @@
                 <div class="switch-toggle">
                     <p class="description description-28 text-white mr-2">Betal årligt og spar 20% </p>
                     <div class="onoffswitch">
-                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch"
-                               tabindex="0" checked>
-                        <label class="onoffswitch-label" for="myonoffswitch">
+                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="annual-toggle"
+                               tabindex="0">
+                        <label class="onoffswitch-label" for="annual-toggle">
                             <span class="onoffswitch-inner"></span>
                             <span class="onoffswitch-switch"></span>
                         </label>
@@ -335,6 +335,26 @@
 
 <!-- Custom JS -->
 <script src="./resources/js/main.js"></script>
+
+<script>
+    $(function() {
+        const discount = 0.1; // 10% discount
+        const pricePro = 296;
+        const priceProPlus = 796;
+        const discountedPricePro = pricePro - (pricePro * discount);
+        const discountedPriceProPlus = priceProPlus - (priceProPlus * discount);
+
+        $("#annual-toggle").change(function() {
+            if ($(this).is(":checked")) {
+                $(".price-pro .fee").text(discountedPricePro);
+                $(".price-pro-plus .fee").text(discountedPriceProPlus);
+            } else {
+                $(".price-pro .fee").text(pricePro);
+                $(".price-pro-plus .fee").text(priceProPlus);
+            }
+        });
+    });
+</script>
 
 </body>
 </html>
