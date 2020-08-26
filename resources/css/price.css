@@ -96,7 +96,7 @@
   font-weight: 400;
   font-size: 1.1rem;
   line-height: 100%;
-  color: #0F1010;
+  color: #0f1010;
 }
 .section-landing .prices .item .price .top-price .fee {
   margin-left: 5px;
@@ -104,7 +104,7 @@
   font-weight: 700;
   font-size: 2.3rem;
   line-height: 100%;
-  color: #0F1010;
+  color: #0f1010;
 }
 .section-landing .prices .item .price .top-price .per {
   margin-left: 10px;
@@ -114,12 +114,12 @@
   font-weight: 700;
   font-size: 1.1rem;
   line-height: 100%;
-  color: #0F1010;
+  color: #0f1010;
 }
 .section-landing .prices .item .price .excl-text {
   margin-top: 10px;
   display: block;
-  color: #B8C1D3;
+  color: #b8c1d3;
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   font-size: 0.9rem;
@@ -157,7 +157,7 @@
   padding: 12px 20px;
   position: absolute;
   color: white;
-  background-color: #FD8368;
+  background-color: #fd8368;
   top: 10px;
   left: -4px;
 }

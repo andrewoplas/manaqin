@@ -3,167 +3,167 @@
 @import "./abstract/breakpoint";
 
 .section-landing {
-    padding-top: 220px;
-    padding-bottom: 120px;
-    background-color: $color-blue;
-    position: relative;
+  padding-top: 220px;
+  padding-bottom: 120px;
+  background-color: $color-blue;
+  position: relative;
 
+  .main-header {
+    @include clear-spacing;
+    @include font(2.8rem, $fw-black);
+    @include element-center;
+    max-width: 800px;
+    color: white;
+    line-height: 60px;
+    text-align: center;
+  }
+
+  .main-subheader {
+    @include clear-spacing;
+    @include element-center;
+    @include font(1.25rem);
+    max-width: 800px;
+    margin-top: 40px;
+    color: white;
+    line-height: 35px;
+    text-align: center;
+  }
+
+  .button {
+    @include element-center;
+    margin-top: 40px;
+  }
+
+  .ssl-section {
+    @include element-center;
+    width: 325px;
+    margin-top: 10px;
+    @include flex(center, center);
+
+    img {
+      width: 10px;
+    }
+
+    span {
+      color: white;
+      margin-left: 10px;
+      @include font(0.75rem, $fw-medium);
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding-top: 160px;
+  }
+
+  @include media-breakpoint-down(xs) {
     .main-header {
-        @include clear-spacing;
-        @include font(2.8rem, $fw-black);
-        @include element-center;
-        max-width: 800px;
-        color: white;
-        line-height: 60px;
-        text-align: center;
+      @include font(2.3rem, $fw-black);
+      line-height: 50px;
     }
 
     .main-subheader {
-        @include clear-spacing;
-        @include element-center;
-        @include font(1.25rem);
-        max-width: 800px;
-        margin-top: 40px;
-        color: white;
-        line-height: 35px;
-        text-align: center;
-    }
-
-    .button {
-        @include element-center;
-        margin-top: 40px;
+      margin-top: 30px;
+      @include font(1rem);
+      line-height: 25px;
     }
 
     .ssl-section {
-        @include element-center;
-        width: 325px;
-        margin-top: 10px;
-        @include flex(center, center);
-
-        img {
-            width: 10px;
-        }
-
-        span {
-            color: white;
-            margin-left: 10px;
-            @include font(0.75rem, $fw-medium);
-        }
+      width: 100%;
     }
-
-    @include media-breakpoint-down(sm) {
-        padding-top: 160px;
-    }
-
-    @include media-breakpoint-down(xs) {
-        .main-header {
-            @include font(2.3rem, $fw-black);
-            line-height: 50px
-        }
-
-        .main-subheader {
-            margin-top: 30px;
-            @include font(1rem);
-            line-height: 25px;
-        }
-
-        .ssl-section {
-            width: 100%;
-        }
-    }
+  }
 }
 
 .section-features {
-    padding-top: 100px;
-    padding-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  .main-features {
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 100px;
+
+    .item {
+      margin-bottom: 100px;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .main-features {
+      margin-top: 125px;
+      grid-column-gap: 75px;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    .main-features {
+      grid-column-gap: 25px;
+    }
+  }
+
+  @include media-breakpoint-down(xs) {
+    padding-bottom: 0;
 
     .main-features {
-        margin-top: 150px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-column-gap: 100px;
-
-        .item {
-            margin-bottom: 100px;
-        }
+      margin-top: 75px;
+      grid-column-gap: 0;
+      grid-template-columns: 1fr;
     }
-
-    @include media-breakpoint-down(md) {
-        .main-features {
-            margin-top: 125px;
-            grid-column-gap: 75px;
-        }
-    }
-
-    @include media-breakpoint-down(sm) {
-        .main-features {
-            grid-column-gap: 25px;
-        }
-    }
-
-    @include media-breakpoint-down(xs) {
-        padding-bottom: 0;
-
-        .main-features {
-            margin-top: 75px;
-            grid-column-gap: 0;
-            grid-template-columns: 1fr;
-        }
-    }
+  }
 }
 
 .section-try-us {
-    margin-bottom: 150px;
+  margin-bottom: 150px;
 
+  .wrapper {
+    height: 300px;
+    @include flex(stretch, center);
+  }
+
+  .try-us-container {
+    width: 300px;
+    height: 100%;
+    padding: 25px;
+    text-align: center;
+    flex-shrink: 0;
+    @include flex(center, center);
+    background-image: linear-gradient(to right, #2a50ba, #396af0);
+  }
+
+  .message-container {
+    height: 100%;
+    padding: 30px;
+    background-color: $color-lilac;
+  }
+
+  @include media-breakpoint-down(lg) {
+    .message-container {
+      .header {
+        @include font(2rem, $fw-medium);
+      }
+    }
+  }
+
+  @include media-breakpoint-down(md) {
     .wrapper {
-        height: 300px;
-        @include flex(stretch, center);
+      height: 350px;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    .wrapper {
+      height: auto;
+      display: block;
     }
 
     .try-us-container {
-        width: 300px;
-        height: 100%;
-        padding: 25px;
-        text-align: center;
-        flex-shrink: 0;
-        @include flex(center, center);
-        background-image: linear-gradient(to right, #2A50BA, #396AF0);
+      width: 100%;
     }
 
     .message-container {
-        height: 100%;
-        padding: 30px;
-        background-color: $color-lilac;
+      button {
+        @include element-center;
+      }
     }
-
-    @include media-breakpoint-down(lg) {
-        .message-container {
-            .header {
-                @include font(2rem, $fw-medium);
-            }
-        }
-    }
-
-    @include media-breakpoint-down(md) {
-        .wrapper {
-            height: 350px;
-        }
-    }
-
-    @include media-breakpoint-down(sm) {
-        .wrapper {
-            height: auto;
-            display: block;
-        }
-
-        .try-us-container {
-            width: 100%;
-        }
-
-        .message-container {
-            button {
-                @include element-center;
-            }
-        }
-    }
+  }
 }

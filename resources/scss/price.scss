@@ -3,241 +3,241 @@
 @import "./abstract/breakpoint";
 
 .section-landing {
-    padding-top: 180px;
-    padding-bottom: 400px;
-    background-color: $color-blue;
-    position: relative;
+  padding-top: 180px;
+  padding-bottom: 400px;
+  background-color: $color-blue;
+  position: relative;
 
-    .container {
-        position: relative;
+  .container {
+    position: relative;
+  }
+
+  .prices {
+    margin-top: 160px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    @include flex(center, center);
+
+    .item {
+      width: 350px;
+      height: 450px;
+      background-color: white;
+      border-radius: 6px;
+      padding: 50px 40px;
+      position: relative;
+
+      .title {
+        @include clear-spacing;
+        font-size: 2.3rem;
+        font-weight: $fw-bold;
+        color: $color-text;
+        text-align: center;
+      }
+
+      .subtitle {
+        @include clear-spacing;
+        margin-top: 20px;
+        font-size: 1rem;
+        color: $color-text;
+        text-align: center;
+      }
+
+      .custom-feature {
+        @include clear-spacing;
+        margin-top: 50px;
+        color: $color-text;
+        @include font(1.1rem, $fw-light);
+        line-height: 30px;
+        text-align: center;
+      }
+
+      .feature-list {
+        margin-top: 50px;
+
+        .feature-item {
+          @include flex(stretch, center);
+
+          img {
+            width: 12px;
+            margin-right: 8px;
+          }
+
+          p {
+            color: $color-text;
+            @include font(1.1rem, $fw-light);
+            line-height: 30px;
+            @include clear-spacing;
+          }
+        }
+      }
+
+      .price {
+        @include clear-spacing;
+        position: absolute;
+        bottom: 25px;
+        left: 0;
+        right: 0;
+        text-align: center;
+
+        .top-price {
+          @include flex($justify-content: center);
+
+          .currency {
+            @include font(1.1rem, $fw-regular);
+            color: #0f1010;
+          }
+
+          .fee {
+            margin-left: 5px;
+            @include font(2.3rem, $fw-bold);
+            color: #0f1010;
+          }
+
+          .per {
+            margin-left: 10px;
+            margin-bottom: 5px;
+            align-self: flex-end;
+            @include font(1.1rem, $fw-bold);
+            color: #0f1010;
+          }
+        }
+
+        .excl-text {
+          margin-top: 10px;
+          display: block;
+          color: #b8c1d3;
+          @include font(0.9rem);
+        }
+      }
+
+      .custom-price {
+        @include clear-spacing;
+        position: absolute;
+        bottom: 25px;
+        left: 0;
+        right: 0;
+        margin-top: 42px;
+        color: $color-text;
+        @include font(1.1rem, $fw-light);
+        line-height: 30px;
+        text-align: center;
+      }
+    }
+
+    .price-pro-plus {
+      height: 525px;
+      margin: -30px -10px 0;
+      padding-top: 90px;
+      border: 3px solid $color-blue;
+      border-radius: 9px;
+      z-index: 1;
+
+      .banner {
+        @include font(0.8rem, $fw-light);
+        padding: 12px 20px;
+        position: absolute;
+        color: white;
+        background-color: #fd8368;
+        top: 10px;
+        left: -4px;
+      }
+    }
+  }
+
+  .switch-toggle {
+    @include flex(center, center);
+    position: absolute;
+    right: 57px;
+    margin-top: 85px;
+
+    label {
+      margin-bottom: 0;
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    .switch-toggle {
+      right: 0;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    padding-bottom: 100px;
+
+    .switch-toggle {
+      margin-top: 50px;
+      left: 0;
+      right: 0;
     }
 
     .prices {
-        margin-top: 160px;
-        position: absolute;
-        left: 0;
-        right: 0;
-        @include flex(center, center);
+      margin-top: 100px;
+      flex-direction: column;
+      position: relative;
 
-        .item {
-            width: 350px;
-            height: 450px;
-            background-color: white;
-            border-radius: 6px;
-            padding: 50px 40px;
-            position: relative;
-
-            .title {
-                @include clear-spacing;
-                font-size: 2.3rem;
-                font-weight: $fw-bold;
-                color: $color-text;
-                text-align: center;
-            }
-
-            .subtitle {
-                @include clear-spacing;
-                margin-top: 20px;
-                font-size: 1rem;
-                color: $color-text;
-                text-align: center;
-            }
-
-            .custom-feature {
-                @include clear-spacing;
-                margin-top: 50px;
-                color: $color-text;
-                @include font(1.1rem, $fw-light);
-                line-height: 30px;
-                text-align: center;
-            }
-
-            .feature-list {
-                margin-top: 50px;
-
-                .feature-item {
-                    @include flex(stretch, center);
-
-                    img {
-                        width: 12px;
-                        margin-right: 8px;
-                    }
-
-                    p {
-                        color: $color-text;
-                        @include font(1.1rem, $fw-light);
-                        line-height: 30px;
-                        @include clear-spacing;
-                    }
-                }
-            }
-
-            .price {
-                @include clear-spacing;
-                position: absolute;
-                bottom: 25px;
-                left: 0;
-                right: 0;
-                text-align: center;
-
-                .top-price {
-                    @include flex($justify-content: center);
-
-                    .currency {
-                        @include font(1.1rem, $fw-regular);
-                        color: #0F1010;
-                    }
-
-                    .fee {
-                        margin-left: 5px;
-                        @include font(2.3rem, $fw-bold);
-                        color: #0F1010;
-                    }
-
-                    .per {
-                        margin-left: 10px;
-                        margin-bottom: 5px;
-                        align-self: flex-end;
-                        @include font(1.1rem, $fw-bold);
-                        color: #0F1010;
-                    }
-                }
-
-                .excl-text {
-                    margin-top: 10px;
-                    display: block;
-                    color: #B8C1D3;
-                    @include font(0.9rem);
-                }
-            }
-
-            .custom-price {
-                @include clear-spacing;
-                position: absolute;
-                bottom: 25px;
-                left: 0;
-                right: 0;
-                margin-top: 42px;
-                color: $color-text;
-                @include font(1.1rem, $fw-light);
-                line-height: 30px;
-                text-align: center;
-            }
-        }
-
-        .price-pro-plus {
-            height: 525px;
-            margin: -30px -10px 0;
-            padding-top: 90px;
-            border: 3px solid $color-blue;
-            border-radius: 9px;
-            z-index: 1;
-
-            .banner {
-                @include font(0.8rem, $fw-light);
-                padding: 12px 20px;
-                position: absolute;
-                color: white;
-                background-color: #FD8368;
-                top: 10px;
-                left: -4px;
-            }
-        }
+      .item {
+        margin: 0 0 20px 0;
+        border: 0;
+        border-radius: 6px;
+      }
     }
+  }
 
-    .switch-toggle {
-        @include flex(center, center);
-        position: absolute;
-        right: 57px;
-        margin-top: 85px;
-
-        label {
-            margin-bottom: 0;
-        }
+  @include media-breakpoint-down(xs) {
+    .prices {
+      .item {
+        width: 100%;
+      }
     }
-
-    @include media-breakpoint-down(lg) {
-        .switch-toggle {
-            right: 0;
-        }
-    }
-
-    @include media-breakpoint-down(md) {
-        padding-bottom: 100px;
-
-        .switch-toggle {
-            margin-top: 50px;
-            left: 0;
-            right: 0;
-        }
-
-        .prices {
-            margin-top: 100px;
-            flex-direction: column;
-            position: relative;
-
-            .item {
-                margin: 0 0 20px 0;
-                border: 0;
-                border-radius: 6px;
-            }
-        }
-    }
-
-    @include media-breakpoint-down(xs) {
-        .prices {
-            .item {
-                width: 100%
-            }
-        }
-    }
+  }
 }
 
 .section-landing-bottom {
-    background-color: $color-lilac;
-    height: 500px;
+  background-color: $color-lilac;
+  height: 500px;
 
-    @include media-breakpoint-down(md) {
-        display: none;
-    }
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
 }
 
 .section-faq {
-    padding-top: 150px;
-    padding-bottom: 200px;
+  padding-top: 150px;
+  padding-bottom: 200px;
+
+  .questions {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 100px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    .questions {
+      grid-gap: 50px;
+    }
+  }
+
+  @include media-breakpoint-down(xs) {
+    padding-top: 100px;
+    padding-bottom: 100px;
 
     .questions {
-        margin-top: 100px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 100px;
+      margin-top: 50px;
+      grid-template-columns: 1fr;
+      grid-gap: 25px;
     }
-
-    @include media-breakpoint-down(sm) {
-        .questions {
-            grid-gap: 50px;
-        }
-    }
-
-    @include media-breakpoint-down(xs) {
-        padding-top: 100px;
-        padding-bottom: 100px;
-
-        .questions {
-            margin-top: 50px;
-            grid-template-columns: 1fr;
-            grid-gap: 25px;
-        }
-    }
+  }
 }
 
 .section-try-us {
-    background-color: $color-blue;
-    padding: 100px 0;
+  background-color: $color-blue;
+  padding: 100px 0;
 
-    .description {
-        max-width: 825px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  .description {
+    max-width: 825px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

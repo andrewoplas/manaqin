@@ -144,7 +144,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  background-image: linear-gradient(to right, #2A50BA, #396AF0);
+  background-image: linear-gradient(to right, #2a50ba, #396af0);
 }
 .section-try-us .message-container {
   height: 100%;

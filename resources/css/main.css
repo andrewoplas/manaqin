@@ -146,16 +146,16 @@
   font-size: 2rem;
   line-height: 100%;
   font-family: "Pacifico", sans-serif !important;
-  color: #51607E;
+  color: #51607e;
 }
 .layout-footer .contact-details .description {
-  color: #51607E !important;
+  color: #51607e !important;
 }
 .layout-footer hr {
-  border-color: #C6CFE0 !important;
+  border-color: #c6cfe0 !important;
 }
 .layout-footer .footer-menu-links .description {
-  color: #51607E !important;
+  color: #51607e !important;
 }
 .layout-footer .footer-menu-links .title {
   font-weight: 400;
@@ -173,7 +173,7 @@
   flex-direction: row;
 }
 .layout-footer .footer-note-container .footer-note {
-  color: #C6CFE0 !important;
+  color: #c6cfe0 !important;
 }
 .layout-footer .footer-note-container .language-selection {
   padding-bottom: 0;
@@ -182,7 +182,8 @@
   display: flex;
   flex-basis: 30%;
 }
-.layout-footer .footer-note-container .language-selection .menu .item, .layout-footer .footer-note-container .language-selection .text {
+.layout-footer .footer-note-container .language-selection .menu .item,
+.layout-footer .footer-note-container .language-selection .text {
   display: flex;
   align-items: center;
   justify-content: stretch;
@@ -205,7 +206,8 @@
   .layout-footer .question-wrapper {
     flex-direction: column;
   }
-  .layout-footer .question-wrapper .header, .layout-footer .question-wrapper .description {
+  .layout-footer .question-wrapper .header,
+.layout-footer .question-wrapper .description {
     text-align: center;
   }
   .layout-footer .question-wrapper button {
@@ -228,7 +230,8 @@
   }
 }
 @media (max-width: 575.98px) {
-  .layout-footer .main-content p, .layout-footer .main-content a {
+  .layout-footer .main-content p,
+.layout-footer .main-content a {
     text-align: center;
   }
 }
@@ -365,7 +368,8 @@
   transition: margin 0.3s ease-in 0s;
 }
 
-.onoffswitch-inner:before, .onoffswitch-inner:after {
+.onoffswitch-inner:before,
+.onoffswitch-inner:after {
   display: block;
   float: left;
   width: 50%;
@@ -381,14 +385,14 @@
 .onoffswitch-inner:before {
   content: "ON";
   padding-left: 10px;
-  background-color: #00BEA5;
-  color: #FFFFFF;
+  background-color: #00bea5;
+  color: #ffffff;
 }
 
 .onoffswitch-inner:after {
   content: "OFF";
   padding-right: 10px;
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
   color: #999999;
   text-align: right;
 }
@@ -398,7 +402,7 @@
   width: 27px;
   height: 27px;
   margin: 4px;
-  background: #FFFFFF;
+  background: #ffffff;
   position: absolute;
   top: 0;
   bottom: 0;

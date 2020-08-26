@@ -77,14 +77,17 @@
   padding: 0;
   margin: 0;
   margin-top: 10px;
-  color: #E2E2E2;
+  color: #e2e2e2;
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   font-size: 12px;
   line-height: 100%;
 }
 @media (max-width: 1199.98px) {
-  .section-landing .main-header, .section-landing .main-subheader, .section-landing .button, .section-landing .ssl-section {
+  .section-landing .main-header,
+.section-landing .main-subheader,
+.section-landing .button,
+.section-landing .ssl-section {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -140,13 +143,13 @@
   margin-bottom: 10px !important;
 }
 .section-facts .facts-list .item.fact-promoter .wrapper {
-  background-color: #D5FFF2;
+  background-color: #d5fff2;
 }
 .section-facts .facts-list .item.fact-passive .wrapper {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
 }
 .section-facts .facts-list .item.fact-detractor .wrapper {
-  background-color: #FFEFD5;
+  background-color: #ffefd5;
 }
 .section-facts .facts-list .item .wrapper {
   padding: 15px;
@@ -332,7 +335,7 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 1px;
-  background-color: #D6E1F2;
+  background-color: #d6e1f2;
   border: 2px solid white;
 }
 .section-features .features-list .item {

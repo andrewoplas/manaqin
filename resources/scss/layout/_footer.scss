@@ -3,122 +3,124 @@
 @import "../abstract/breakpoint";
 
 .layout-footer {
-    padding: 50px 0;
-    background-color: $color-lilac;
+  padding: 50px 0;
+  background-color: $color-lilac;
 
+  .question-wrapper {
+    @include flex(space-between, center);
+
+    button {
+      margin-left: 25px;
+    }
+  }
+
+  .contact-details {
+    .logo-text {
+      @include font(2rem);
+      font-family: $font-logo !important;
+      color: $color-footer;
+    }
+
+    .description {
+      color: $color-footer !important;
+    }
+  }
+
+  hr {
+    border-color: #c6cfe0 !important;
+  }
+
+  .footer-menu-links {
+    .description {
+      color: $color-footer !important;
+    }
+
+    .title {
+      font-weight: $fw-regular;
+    }
+
+    a {
+      display: block;
+
+      &:hover {
+        color: $color-blue;
+      }
+    }
+  }
+
+  .footer-note-container {
+    @include flex(space-between, center);
+
+    .footer-note {
+      color: #c6cfe0 !important;
+    }
+
+    .language-selection {
+      padding-bottom: 0;
+      padding-top: 0;
+      align-items: center;
+      display: flex;
+      flex-basis: 30%;
+
+      .menu .item,
+      .text {
+        @include flex(stretch, center);
+        font-family: $font-primary !important;
+        font-size: 0.7rem;
+        line-height: 100%;
+      }
+
+      .image {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .footer-note-container {
+      .language-selection {
+        width: 100px;
+        flex-shrink: 0;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
     .question-wrapper {
-        @include flex(space-between, center);
+      flex-direction: column;
 
-        button {
-            margin-left: 25px;
-        }
-    }
+      .header,
+      .description {
+        text-align: center;
+      }
 
-    .contact-details {
-        .logo-text {
-            @include font(2rem);
-            font-family: $font-logo !important;
-            color: $color-footer;
-        }
-
-        .description {
-            color: $color-footer !important;
-        }
-    }
-
-
-    hr {
-        border-color: #C6CFE0 !important;
-    }
-
-    .footer-menu-links {
-        .description {
-            color: $color-footer !important;
-        }
-
-        .title {
-            font-weight: $fw-regular;
-        }
-
-        a {
-            display: block;
-
-            &:hover {
-                color: $color-blue;
-            }
-        }
+      button {
+        @include element-center;
+        margin-top: 40px;
+      }
     }
 
     .footer-note-container {
-        @include flex(space-between, center);
+      padding-bottom: 50px;
+      flex-direction: column;
 
-        .footer-note {
-            color: #C6CFE0 !important;
-        }
+      .footer-note {
+        text-align: center;
+      }
 
-        .language-selection {
-            padding-bottom: 0;
-            padding-top: 0;
-            align-items: center;
-            display: flex;
-            flex-basis: 30%;
-
-            .menu .item, .text {
-                @include flex(stretch, center);
-                font-family: $font-primary !important;
-                font-size: 0.7rem;
-                line-height: 100%;
-            }
-
-            .image {
-                width: 20px;
-                height: 20px;
-            }
-        }
+      .language-selection {
+        width: 300px;
+        margin-top: 40px;
+        flex-basis: 100%;
+      }
     }
+  }
 
-    @include media-breakpoint-down(md) {
-        .footer-note-container {
-            .language-selection {
-                width: 100px;
-                flex-shrink: 0;
-            }
-        }
+  @include media-breakpoint-down(xs) {
+    .main-content p,
+    .main-content a {
+      text-align: center;
     }
-
-    @include media-breakpoint-down(sm) {
-        .question-wrapper {
-            flex-direction: column;
-
-            .header, .description {
-                text-align: center;
-            }
-
-            button {
-                @include element-center;
-                margin-top: 40px;
-            }
-        }
-
-        .footer-note-container {
-            padding-bottom: 50px;
-            flex-direction: column;
-
-            .footer-note {
-                text-align: center;
-            }
-
-            .language-selection {
-                width: 300px;
-                margin-top: 40px;
-                flex-basis: 100%;
-            }
-        }
-    }
-
-    @include media-breakpoint-down(xs) {
-        .main-content p, .main-content a {
-            text-align: center;
-        }
-    }
+  }
 }
