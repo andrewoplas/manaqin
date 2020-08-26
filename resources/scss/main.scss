@@ -1,0 +1,23 @@
+// abstracts
+@import "./abstract/variables";
+@import "./abstract/mixins";
+
+// layout
+@import "layout/header";
+@import "layout/footer";
+
+// components
+@import "components/button";
+@import "components/text";
+
+* {
+    font-family: $font-primary;
+    outline: none !important;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
