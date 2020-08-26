@@ -5,9 +5,11 @@
     margin: 0;
     color: $color-text;
     @include font(2.3rem, $fw-medium);
+    line-height: 40px;
 
     &.header-46 {
         @include font(1.5rem, $fw-medium);
+        line-height: 40px;
     }
 }
 
@@ -29,6 +31,11 @@
 
     &.description-30 {
         @include font(1.15rem, $fw-light);
+        line-height: 30px;
+    }
+
+    &.description-28 {
+        @include font(1.1rem, $fw-light);
         line-height: 30px;
     }
 

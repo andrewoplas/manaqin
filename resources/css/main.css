@@ -21,11 +21,13 @@
   background-color: #2557e0;
   color: white !important;
 }
-.layout-header.active .menu-xs-icon-blue {
-  display: block !important;
-}
-.layout-header.active .menu-xs-icon-white {
-  display: none !important;
+@media (max-width: 767.98px) {
+  .layout-header.active .menu-xs-icon-blue {
+    display: block !important;
+  }
+  .layout-header.active .menu-xs-icon-white {
+    display: none !important;
+  }
 }
 .layout-header .wrapper {
   display: flex;
@@ -34,7 +36,7 @@
   flex-direction: row;
 }
 .layout-header .wrapper .logo {
-  margin: 0;
+  margin: -10px 0 0 0;
   padding: 0;
   color: white;
   font-family: "Pacifico", sans-serif;
@@ -280,12 +282,14 @@
   font-weight: 500;
   font-size: 2.3rem;
   line-height: 100%;
+  line-height: 40px;
 }
 .header.header-46 {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 1.5rem;
   line-height: 100%;
+  line-height: 40px;
 }
 
 .description {
@@ -315,6 +319,13 @@
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 1.15rem;
+  line-height: 100%;
+  line-height: 30px;
+}
+.description.description-28 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.1rem;
   line-height: 100%;
   line-height: 30px;
 }
