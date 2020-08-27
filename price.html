@@ -1,359 +1,326 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
-<head>
-    <meta charset="utf-8"/>
-    <title>Manaqin</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+<html class="no-js" lang="da">
+    <head>
+        <meta charset="utf-8" />
+        <title>Manaqin</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-          rel="stylesheet"/>
+        <!-- Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
 
-    <!-- Required CSS -->
-    <link rel="stylesheet" href="./resources/vendors/bootstrap/css/bootstrap.css"/>
-    <link rel="stylesheet" href="./resources/vendors/semantic-ui/transition.min.css"/>
-    <link rel="stylesheet" href="./resources/vendors/semantic-dropdown/dropdown.css"/>
+        <!-- Required CSS -->
+        <link rel="stylesheet" href="./resources/vendors/bootstrap/css/bootstrap.css" />
+        <link rel="stylesheet" href="./resources/vendors/semantic-ui/transition.min.css" />
+        <link rel="stylesheet" href="./resources/vendors/semantic-dropdown/dropdown.css" />
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="./resources/css/main.css"/>
-    <link rel="stylesheet" href="./resources/css/price.css"/>
-</head>
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="./resources/css/main.css" />
+        <link rel="stylesheet" href="./resources/css/price.css" />
+    </head>
 
-<body>
-<div>
-    <!-- ===== HEADER ===== -->
-    <div class="layout-header" id="sticky-navbar">
-        <div class="container">
-            <div class="wrapper">
-                <h1 class="logo">manaqin</h1>
-                <div class="menu-items">
-                    <a class="item" href="/">Forside</a>
-                    <a class="item" href="/feature.html">Funktioner</a>
-                    <a class="item" href="/price.html">Priser</a>
-                    <a class="item" href="#">Log ind</a>
-                    <button class="btn item button">Prøv gratis nu</button>
-                </div>
-
-                <img class="menu-xs-icon menu-xs-icon-white d-block d-md-none menu-toggle"
-                     src="./resources/assets/images/menu.svg"/>
-                <img class="menu-xs-icon menu-xs-icon-blue menu-toggle" src="./resources/assets/images/menu-blue.svg"/>
-            </div>
-
-            <!-- [sm-down] Mobile menu -->
-            <div class="menu-xs d-md-none">
-                <img class="menu-close menu-toggle" src="./resources/assets/images/close.svg"/>
-                <i class="menu-close menu-toggle"></i>
-                <div class="menu-container links">
-                    <a class="item" href="/">Forside</a>
-                    <a class="item" href="/feature.html">Funktioner</a>
-                    <a class="item" href="/price.html">Priser</a>
-                    <a class="item" href="#">Log ind</a>
-                    <button class="btn large button blue">Prøv gratis nu</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- ===== MAIN CONTENT ===== -->
-    <div class="layout-content">
-        <div class="section-landing">
-            <div class="container">
-                <h3 class="header text-white text-center">Ubegrænset NPS målinger</h3>
-                <p class="description description-32 mt-4 text-white text-center">Kom i gang på 2 minutter — prøv os
-                    gratis i 14 dage og uden binding!</p>
-
-                <div class="switch-toggle">
-                    <p class="description description-28 text-white mr-2">Månedlig</p>
-                    <label class="switch">
-                        <input type="checkbox" id="annual-toggle" checked/>
-                        <span class="slider round"></span>
-                    </label>
-                    <p class="description description-28 text-white ml-2">Årlig</p>
-                </div>
-
-                <div class="prices">
-                    <div class="item price-pro">
-                        <h3 class="title">Pro</h3>
-                        <p class="subtitle">Til d</p>
-
-                        <div class="feature-list">
-                            <div class="feature-item">
-                                <img src="./resources/assets/images/check.svg"/>
-                                <p>Ubegrænset besvarelser</p>
-                            </div>
-                            <div class="feature-item">
-                                <img src="./resources/assets/images/check.svg"/>
-                                <p>Brugerdefineret logo og farver</p>
-                            </div>
-                            <div class="feature-item">
-                                <img src="./resources/assets/images/check.svg"/>
-                                <p>Sync med økonomisystem</p>
-                            </div>
+    <body>
+        <div>
+            <!-- ===== HEADER ===== -->
+            <div class="layout-header" id="sticky-navbar">
+                <div class="container">
+                    <div class="wrapper">
+                        <h1 class="logo">manaqin</h1>
+                        <div class="menu-items">
+                            <a class="item" href="/">Forside</a>
+                            <a class="item" href="/feature.html">Funktioner</a>
+                            <a class="item" href="/price.html">Priser</a>
+                            <a class="item" href="#">Log ind</a>
+                            <button class="btn item button">Prøv gratis nu</button>
                         </div>
 
-                        <div class="price">
-                            <div class="top-price">
-                                <span class="currency">kr</span>
-                                <span class="fee">266</span>
-                                <span class="per">/md.</span>
-                            </div>
-                            <span class="excl-text">(ekskl. moms)</span>
-                        </div>
+                        <img class="menu-xs-icon menu-xs-icon-white d-block d-md-none menu-toggle" src="./resources/assets/images/menu.svg" alt="menu icon" />
+                        <img class="menu-xs-icon menu-xs-icon-blue menu-toggle" src="./resources/assets/images/menu-blue.svg" alt="menu icon" />
                     </div>
 
-                    <div class="item price-pro-plus">
-                        <div class="banner">MEST POPULÆRE</div>
-                        <h3 class="title">Pro Plus</h3>
-                        <p class="subtitle">Til virksomheder i vækst</p>
-
-                        <div class="feature-list">
-                            <div class="feature-item">
-                                <img src="./resources/assets/images/check.svg"/>
-                                <p>Alt fra Pro versionen</p>
-                            </div>
-                            <div class="feature-item">
-                                <img src="./resources/assets/images/check.svg"/>
-                                <p>Segment specifik spørgsmål</p>
-                            </div>
-                            <div class="feature-item">
-                                <img src="./resources/assets/images/check.svg"/>
-                                <p>Spørgskema på flere sprog</p>
-                            </div>
-                            <div class="feature-item">
-                                <img src="./resources/assets/images/check.svg"/>
-                                <p>Statistik og trends</p>
-                            </div>
-                            <div class="feature-item">
-                                <img src="./resources/assets/images/check.svg"/>
-                                <p>Op til 5 brugere</p>
-                            </div>
-                        </div>
-
-                        <div class="price">
-                            <div class="top-price">
-                                <span class="currency">kr</span>
-                                <span class="fee">716</span>
-                                <span class="per">/md.</span>
-                            </div>
-                            <span class="excl-text">(ekskl. moms)</span>
-                        </div>
-                    </div>
-
-                    <div class="item price-enterprise">
-                        <h3 class="title">Enterprise</h3>
-                        <p class="subtitle text-white">-</p>
-
-                        <p class="custom-feature">Hvis du er et bureau, en potentiel partner eller brug for mere så
-                            kontakt os, og vi vil sammensætte en pakke, der passer til dig.</p>
-
-                        <p class="custom-price">
-                            Kontakt os <br/>
-                            +45 91 52 52 98
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section-landing-bottom"></div>
-
-        <div class="section-faq">
-            <div class="container">
-                <h3 class="header text-center">Ofte stillede spørgsmål</h3>
-                <p class="description mt-5 text-center">Finder du ikke den funktion du leder efter, så kontakt os – vi
-                    har meget mere på lager end vi har fået skrevet her</p>
-
-                <div class="questions">
-                    <div class="item">
-                        <p class="description description-32 font-weight-bold">Kan jeg prøve Manaqin før jeg beslutter
-                            mig?</p>
-                        <p class="description description-28 mt-2 mt-sm-4">
-                            Selvfølgelig! Du kan prøve Manaqin, kvit og frit i 14 dage. I prøveperioden kan du sende op
-                            til 250 spørgeskemaer så du kan få et førstehåndsindtryk af systemet.
-                        </p>
-                    </div>
-
-                    <div class="item">
-                        <p class="description description-32 font-weight-bold">Kan jeg bruge Manaqin i bare en
-                            måned?</p>
-                        <p class="description description-28 mt-2 mt-sm-4">
-                            Vi anbefaler kraftigt at du foretager dine NPS-målinger regelmæssigt og over en længere
-                            periode, men hvis du ønsker at benytte manaqin i blot en enkelt måned
-                            imødekommer vi selvfølgelig det. Du kan opsige dit medlemskab når som helst.
-                        </p>
-                    </div>
-
-                    <div class="item">
-                        <p class="description description-32 font-weight-bold">Kan jeg betale ét år ad gangen?</p>
-                        <p class="description description-28 mt-2 mt-sm-4">
-                            Ja, du skal blot vælge valgmuligheden “Årlig betaling”, og vi sørger for at du kun
-                            faktureres årlig. Vi giver endda en klækkelig rabat på 20%, når du betaler for et
-                            helt år ad gangen.
-                        </p>
-                    </div>
-
-                    <div class="item">
-                        <p class="description description-32 font-weight-bold">Kan det opfølgende spørgsmål ændres?</p>
-                        <p class="description description-28 mt-2 mt-sm-4">
-                            Ja, du kan tilpasse det opfølgende spørgsmål afhængig af besvarelsens segment (Promoter,
-                            Detractor eller Passive).
-                        </p>
-                    </div>
-
-                    <div class="item">
-                        <p class="description description-32 font-weight-bold">Kan jeg sende NPS målinger på andre
-                            sprog?</p>
-                        <p class="description description-28 mt-2 mt-sm-4">
-                            Ja, du kan vælge mellem dansk, engelsk, tysk og spansk. Du har også mulighed for selv at
-                            oversætte til at andet sprog.
-                        </p>
-                    </div>
-
-                    <div class="item">
-                        <p class="description description-32 font-weight-bold">Kan vi inviterer flere brugere til vores
-                            konto?</p>
-                        <p class="description description-28 mt-2 mt-sm-4">
-                            Er I flere i virksomheden der skal have adgang til at NPS-programmet, kan I invitere brugere
-                            til kontoen og give adgang. Dette dog kræver Pro Plus medlemskab.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="section-try-us">
-            <div class="container text-center">
-                <h3 class="header text-center text-white">Klar til at vækste din virksomhed?</h3>
-                <p class="description mt-4 text-center text-white">
-                    Med vores avanceret, men brugervenlige værktøj, bliver det nemmere end nogensinde før at lytte til
-                    dine kunder og vækste din virksomhed
-                </p>
-
-                <button class="btn button large d-block mx-auto mt-5">Prøv gratis nu</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- ===== FOOTER ===== -->
-    <div class="layout-footer">
-        <div class="container">
-            <div class="question-wrapper my-5">
-                <div class="texts">
-                    <h3 class="header header-46">Er du klar til at få dine kunders ærlige mening?</h3>
-                    <p class="description description-42 mt-3">Få overblik over kundernes holdning til din virksomhed og
-                        reagere på eventuel negativ feedback, før der bliver et problem</p>
-                </div>
-                <button class="btn button large blue">Prøv gratis nu</button>
-            </div>
-
-            <hr/>
-
-            <div class="row my-5 pb-5 main-content">
-                <div class="col-lg-4 contact-details">
-                    <p class="logo-text">manaqin</p>
-                    <p class="description description-30 mt-4">Emdrupvej 28A</p>
-                    <p class="description description-30 mt-2">2100 København</p>
-                    <p class="description description-30 mt-2">CVR: 34451648</p>
-                </div>
-                <div class="col-lg-8 footer-menu-links mt-sm-5 mt-lg-0">
-                    <div class="row">
-                        <div class="col-sm-6 col-md-3 mt-5 mt-sm-0">
-                            <p class="description description-30 title">PRODUKTET</p>
-                            <a href="#" class="description description-30 mt-4">Funktioner</a>
-                            <a href="#" class="description description-30 mt-2">Priser</a>
-                            <a href="#" class="description description-30 mt-2">Hvad er NPS?</a>
-                        </div>
-                        <div class="col-sm-6 col-md-3 mt-5 mt-sm-0">
-                            <p class="description description-30 title">FIRMAET</p>
-                            <a href="#" class="description description-30 mt-4">LinkedIn</a>
-                            <a href="#" class="description description-30 mt-2">Facebook</a>
-                            <a href="#" class="description description-30 mt-2">Ledige stillinger</a>
-                        </div>
-                        <div class="col-sm-6 col-md-3 mt-5 mt-md-0">
-                            <p class="description description-30 title">JURDISK</p>
-                            <a href="#" class="description description-30 mt-4">Handelsbetingelser</a>
-                            <a href="#" class="description description-30 mt-2">Privatlivspolitik</a>
-                            <a href="#" class="description description-30 mt-2">GDPR</a>
-                        </div>
-                        <div class="col-sm-6 col-md-3 mt-5 mt-md-0">
-                            <p class="description description-30 title">KONTAKT</p>
-                            <a href="mailto:hello@manaqin.com"
-                               class="description description-30 mt-4">hello@manaqin.com</a>
-                            <a href="tel:+4591525298" class="description description-30 mt-2">2100 København</a>
+                    <!-- [sm-down] Mobile menu -->
+                    <div class="menu-xs d-md-none">
+                        <img class="menu-close menu-toggle" src="./resources/assets/images/close.svg" alt="close icon" />
+                        <i class="menu-close menu-toggle"></i>
+                        <div class="menu-container links">
+                            <a class="item" href="/">Forside</a>
+                            <a class="item" href="/feature.html">Funktioner</a>
+                            <a class="item" href="/price.html">Priser</a>
+                            <a class="item" href="#">Log ind</a>
+                            <button class="btn large button blue">Prøv gratis nu</button>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <hr/>
+            <!-- ===== MAIN CONTENT ===== -->
+            <div class="layout-content">
+                <div class="section-landing">
+                    <div class="container">
+                        <h3 class="header text-white text-center">Ubegrænset NPS målinger</h3>
+                        <p class="description description-32 mt-4 text-white text-center">Kom i gang på 2 minutter — prøv os gratis i 14 dage og uden binding!</p>
 
-            <div class="footer-note-container mt-5">
-                <p class="description description-24 footer-note mr-md-5">
-                    NPS er en international standard for måling af kundetilfredshed udarbejdet af Fred Reichheld. NPS®,
-                    Net Promoter® og Net Promoter® Score er registrerede varemærker
-                    tilhørende Satmetrix Systems, Inc., Bain & Company og Fred Reichheld. Copyright © Manaqin 2019 CVR
-                    34451648
-                </p>
+                        <div class="switch-toggle">
+                            <p class="description description-28 text-white mr-2">Månedlig</p>
+                            <label class="switch">
+                                <input type="checkbox" id="annual-toggle" checked />
+                                <span class="slider round"></span>
+                            </label>
+                            <p class="description description-28 text-white ml-2">Årlig</p>
+                        </div>
 
-                <div class="ui fluid selection dropdown language-selection">
-                    <input type="hidden" name="user"/>
-                    <i class="dropdown icon"></i>
-                    <div class="text"><img class="ui mini avatar image"
-                                           src="./resources/assets/images/flag-denmark.png"/>Danmark
+                        <div class="prices">
+                            <div class="item price-pro">
+                                <h3 class="title">Pro</h3>
+                                <p class="subtitle">Til d</p>
+
+                                <div class="feature-list">
+                                    <div class="feature-item">
+                                        <img src="./resources/assets/images/check.svg" alt="check icon" />
+                                        <p>Ubegrænset besvarelser</p>
+                                    </div>
+                                    <div class="feature-item">
+                                        <img src="./resources/assets/images/check.svg" alt="check icon" />
+                                        <p>Brugerdefineret logo og farver</p>
+                                    </div>
+                                    <div class="feature-item">
+                                        <img src="./resources/assets/images/check.svg" alt="check icon" />
+                                        <p>Sync med økonomisystem</p>
+                                    </div>
+                                </div>
+
+                                <div class="price">
+                                    <div class="top-price">
+                                        <span class="currency">kr</span>
+                                        <span class="fee">266</span>
+                                        <span class="per">/md.</span>
+                                    </div>
+                                    <span class="excl-text">(ekskl. moms)</span>
+                                </div>
+                            </div>
+
+                            <div class="item price-pro-plus">
+                                <div class="banner">MEST POPULÆRE</div>
+                                <h3 class="title">Pro Plus</h3>
+                                <p class="subtitle">Til virksomheder i vækst</p>
+
+                                <div class="feature-list">
+                                    <div class="feature-item">
+                                        <img src="./resources/assets/images/check.svg" alt="check icon" />
+                                        <p>Alt fra Pro versionen</p>
+                                    </div>
+                                    <div class="feature-item">
+                                        <img src="./resources/assets/images/check.svg" alt="check icon" />
+                                        <p>Segment specifik spørgsmål</p>
+                                    </div>
+                                    <div class="feature-item">
+                                        <img src="./resources/assets/images/check.svg" alt="check icon" />
+                                        <p>Spørgskema på flere sprog</p>
+                                    </div>
+                                    <div class="feature-item">
+                                        <img src="./resources/assets/images/check.svg" alt="check icon" />
+                                        <p>Statistik og trends</p>
+                                    </div>
+                                    <div class="feature-item">
+                                        <img src="./resources/assets/images/check.svg" alt="check icon" />
+                                        <p>Op til 5 brugere</p>
+                                    </div>
+                                </div>
+
+                                <div class="price">
+                                    <div class="top-price">
+                                        <span class="currency">kr</span>
+                                        <span class="fee">716</span>
+                                        <span class="per">/md.</span>
+                                    </div>
+                                    <span class="excl-text">(ekskl. moms)</span>
+                                </div>
+                            </div>
+
+                            <div class="item price-enterprise">
+                                <h3 class="title">Enterprise</h3>
+                                <p class="subtitle text-white">-</p>
+
+                                <p class="custom-feature">Hvis du er et bureau, en potentiel partner eller brug for mere så kontakt os, og vi vil sammensætte en pakke, der passer til dig.</p>
+
+                                <p class="custom-price">
+                                    Kontakt os <br />
+                                    +45 91 52 52 98
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="menu">
-                        <div class="item active" data-value="danmark">
-                            <img class="ui mini avatar image"
-                                 src="./resources/assets/images/flag-denmark.png"/>Danmark
+                </div>
+                <div class="section-landing-bottom"></div>
+
+                <div class="section-faq">
+                    <div class="container">
+                        <h3 class="header text-center">Ofte stillede spørgsmål</h3>
+                        <p class="description mt-5 text-center">Finder du ikke den funktion du leder efter, så kontakt os – vi har meget mere på lager end vi har fået skrevet her</p>
+
+                        <div class="questions">
+                            <div class="item">
+                                <p class="description description-32 font-weight-bold">Kan jeg prøve Manaqin før jeg beslutter mig?</p>
+                                <p class="description description-28 mt-2 mt-sm-4">
+                                    Selvfølgelig! Du kan prøve Manaqin, kvit og frit i 14 dage. I prøveperioden kan du sende op til 250 spørgeskemaer så du kan få et førstehåndsindtryk af systemet.
+                                </p>
+                            </div>
+
+                            <div class="item">
+                                <p class="description description-32 font-weight-bold">Kan jeg bruge Manaqin i bare en måned?</p>
+                                <p class="description description-28 mt-2 mt-sm-4">
+                                    Vi anbefaler kraftigt at du foretager dine NPS-målinger regelmæssigt og over en længere periode, men hvis du ønsker at benytte manaqin i blot en enkelt måned
+                                    imødekommer vi selvfølgelig det. Du kan opsige dit medlemskab når som helst.
+                                </p>
+                            </div>
+
+                            <div class="item">
+                                <p class="description description-32 font-weight-bold">Kan jeg betale ét år ad gangen?</p>
+                                <p class="description description-28 mt-2 mt-sm-4">
+                                    Ja, du skal blot vælge valgmuligheden “Årlig betaling”, og vi sørger for at du kun faktureres årlig. Vi giver endda en klækkelig rabat på 20%, når du betaler for et
+                                    helt år ad gangen.
+                                </p>
+                            </div>
+
+                            <div class="item">
+                                <p class="description description-32 font-weight-bold">Kan det opfølgende spørgsmål ændres?</p>
+                                <p class="description description-28 mt-2 mt-sm-4">
+                                    Ja, du kan tilpasse det opfølgende spørgsmål afhængig af besvarelsens segment (Promoter, Detractor eller Passive).
+                                </p>
+                            </div>
+
+                            <div class="item">
+                                <p class="description description-32 font-weight-bold">Kan jeg sende NPS målinger på andre sprog?</p>
+                                <p class="description description-28 mt-2 mt-sm-4">
+                                    Ja, du kan vælge mellem dansk, engelsk, tysk og spansk. Du har også mulighed for selv at oversætte til at andet sprog.
+                                </p>
+                            </div>
+
+                            <div class="item">
+                                <p class="description description-32 font-weight-bold">Kan vi inviterer flere brugere til vores konto?</p>
+                                <p class="description description-28 mt-2 mt-sm-4">
+                                    Er I flere i virksomheden der skal have adgang til at NPS-programmet, kan I invitere brugere til kontoen og give adgang. Dette dog kræver Pro Plus medlemskab.
+                                </p>
+                            </div>
                         </div>
-                        <div class="item" data-value="language-1">
-                            <img class="ui mini avatar image"
-                                 src="./resources/assets/images/flag-united-kingdom.png"/>United
-                            Kingdom
+                    </div>
+                </div>
+
+                <div class="section-try-us">
+                    <div class="container text-center">
+                        <h3 class="header text-center text-white">Klar til at vækste din virksomhed?</h3>
+                        <p class="description mt-4 text-center text-white">
+                            Med vores avanceret, men brugervenlige værktøj, bliver det nemmere end nogensinde før at lytte til dine kunder og vækste din virksomhed
+                        </p>
+
+                        <button class="btn button large d-block mx-auto mt-5">Prøv gratis nu</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== FOOTER ===== -->
+            <div class="layout-footer">
+                <div class="container">
+                    <div class="question-wrapper my-5">
+                        <div class="texts">
+                            <h3 class="header header-46">Er du klar til at få dine kunders ærlige mening?</h3>
+                            <p class="description description-42 mt-3">Få overblik over kundernes holdning til din virksomhed og reagere på eventuel negativ feedback, før der bliver et problem</p>
                         </div>
-                        <div class="item" data-value="language-2">
-                            <img class="ui mini avatar image"
-                                 src="./resources/assets/images/flag-japan.png"/>Japan
+                        <button class="btn button large blue">Prøv gratis nu</button>
+                    </div>
+
+                    <hr />
+
+                    <div class="row my-5 pb-5 main-content">
+                        <div class="col-lg-4 contact-details">
+                            <p class="logo-text">manaqin</p>
+                            <p class="description description-30 mt-4">Emdrupvej 28A</p>
+                            <p class="description description-30 mt-2">2100 København</p>
+                            <p class="description description-30 mt-2">CVR: 34451648</p>
                         </div>
-                        <div class="item" data-value="language-3">
-                            <img class="ui mini avatar image"
-                                 src="./resources/assets/images/flag-spain.png"/>Spain
+                        <div class="col-lg-8 footer-menu-links mt-sm-5 mt-lg-0">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-3 mt-5 mt-sm-0">
+                                    <p class="description description-30 title">PRODUKTET</p>
+                                    <a href="#" class="description description-30 mt-4">Funktioner</a>
+                                    <a href="#" class="description description-30 mt-2">Priser</a>
+                                    <a href="#" class="description description-30 mt-2">Hvad er NPS?</a>
+                                </div>
+                                <div class="col-sm-6 col-md-3 mt-5 mt-sm-0">
+                                    <p class="description description-30 title">FIRMAET</p>
+                                    <a href="#" class="description description-30 mt-4">LinkedIn</a>
+                                    <a href="#" class="description description-30 mt-2">Facebook</a>
+                                    <a href="#" class="description description-30 mt-2">Ledige stillinger</a>
+                                </div>
+                                <div class="col-sm-6 col-md-3 mt-5 mt-md-0">
+                                    <p class="description description-30 title">JURDISK</p>
+                                    <a href="#" class="description description-30 mt-4">Handelsbetingelser</a>
+                                    <a href="#" class="description description-30 mt-2">Privatlivspolitik</a>
+                                    <a href="#" class="description description-30 mt-2">GDPR</a>
+                                </div>
+                                <div class="col-sm-6 col-md-3 mt-5 mt-md-0">
+                                    <p class="description description-30 title">KONTAKT</p>
+                                    <a href="mailto:hello@manaqin.com" class="description description-30 mt-4">hello@manaqin.com</a>
+                                    <a href="tel:+4591525298" class="description description-30 mt-2">2100 København</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr />
+
+                    <div class="footer-note-container mt-5">
+                        <p class="description description-24 footer-note mr-md-5">
+                            NPS er en international standard for måling af kundetilfredshed udarbejdet af Fred Reichheld. NPS®, Net Promoter® og Net Promoter® Score er registrerede varemærker
+                            tilhørende Satmetrix Systems, Inc., Bain & Company og Fred Reichheld. Copyright © Manaqin 2019 CVR 34451648
+                        </p>
+
+                        <div class="ui fluid selection dropdown language-selection">
+                            <input type="hidden" name="user" />
+                            <i class="dropdown icon"></i>
+                            <div class="text"><img class="ui mini avatar image" src="./resources/assets/images/flag-denmark.png" alt="Denmark flag" />Danmark</div>
+                            <div class="menu">
+                                <div class="item active" data-value="danmark"><img class="ui mini avatar image" src="./resources/assets/images/flag-denmark.png" alt="Danmark flag" />Danmark</div>
+                                <div class="item" data-value="language-1">
+                                    <img class="ui mini avatar image" src="./resources/assets/images/flag-united-kingdom.png" alt="United Kingdom flag" />United Kingdom
+                                </div>
+                                <div class="item" data-value="language-2"><img class="ui mini avatar image" src="./resources/assets/images/flag-japan.png" alt="Japan flag" />Japan</div>
+                                <div class="item" data-value="language-3"><img class="ui mini avatar image" src="./resources/assets/images/flag-spain.png" alt="Spain flag" />Spain</div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
 
-<!-- Required JS -->
-<script src="./resources/vendors/jquery/jquery.min.js"></script>
-<script src="./resources/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="./resources/vendors/semantic-ui/transition.min.js"></script>
-<script src="./resources/vendors/semantic-dropdown/dropdown.min.js"></script>
-<script src="https://cdn.rawgit.com/JacobLett/IfBreakpoint/e9fcd4fd/if-b4-breakpoint.min.js"></script>
+        <!-- Required JS -->
+        <script src="./resources/vendors/jquery/jquery.min.js"></script>
+        <script src="./resources/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="./resources/vendors/semantic-ui/transition.min.js"></script>
+        <script src="./resources/vendors/semantic-dropdown/dropdown.min.js"></script>
+        <script src="https://cdn.rawgit.com/JacobLett/IfBreakpoint/e9fcd4fd/if-b4-breakpoint.min.js"></script>
 
-<!-- Custom JS -->
-<script src="./resources/js/main.js"></script>
+        <!-- Custom JS -->
+        <script src="./resources/js/main.js"></script>
 
-<script>
-    $(function() {
-        const discount = 0.1; // 10% discount
-        const pricePro = 296;
-        const priceProPlus = 796;
-        const discountedPricePro = pricePro - pricePro * discount;
-        const discountedPriceProPlus = priceProPlus - priceProPlus * discount;
+        <script>
+            $(function () {
+                const discount = 0.1; // 10% discount
+                const pricePro = 296;
+                const priceProPlus = 796;
+                const discountedPricePro = pricePro - pricePro * discount;
+                const discountedPriceProPlus = priceProPlus - priceProPlus * discount;
 
-        $("#annual-toggle").change(function() {
-            if ($(this).is(":checked")) {
-                $(".price-pro .fee").text(discountedPricePro.toFixed(0));
-                $(".price-pro-plus .fee").text(discountedPriceProPlus.toFixed(0));
-            } else {
-                $(".price-pro .fee").text(pricePro.toFixed(0));
-                $(".price-pro-plus .fee").text(priceProPlus.toFixed(0));
-            }
-        });
-    });
-</script>
-</body>
+                $("#annual-toggle").change(function () {
+                    if ($(this).is(":checked")) {
+                        $(".price-pro .fee").text(discountedPricePro.toFixed(0));
+                        $(".price-pro-plus .fee").text(discountedPriceProPlus.toFixed(0));
+                    } else {
+                        $(".price-pro .fee").text(pricePro.toFixed(0));
+                        $(".price-pro-plus .fee").text(priceProPlus.toFixed(0));
+                    }
+                });
+            });
+        </script>
+    </body>
 </html>

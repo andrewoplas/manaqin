@@ -1,396 +1,355 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
-<head>
-    <meta charset="utf-8"/>
-    <title>Manaqin</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+<html class="no-js" lang="da">
+    <head>
+        <meta charset="utf-8" />
+        <title>Manaqin</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-          rel="stylesheet"/>
+        <!-- Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
 
-    <!-- Required CSS -->
-    <link rel="stylesheet" href="./resources/vendors/bootstrap/css/bootstrap.css"/>
-    <link rel="stylesheet" href="./resources/vendors/semantic-ui/transition.min.css"/>
-    <link rel="stylesheet" href="./resources/vendors/semantic-dropdown/dropdown.css"/>
+        <!-- Required CSS -->
+        <link rel="stylesheet" href="./resources/vendors/bootstrap/css/bootstrap.css" />
+        <link rel="stylesheet" href="./resources/vendors/semantic-ui/transition.min.css" />
+        <link rel="stylesheet" href="./resources/vendors/semantic-dropdown/dropdown.css" />
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="./resources/css/main.css"/>
-    <link rel="stylesheet" href="./resources/css/home.css"/>
-</head>
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="./resources/css/main.css" />
+        <link rel="stylesheet" href="./resources/css/home.css" />
+    </head>
 
-<body>
-<div>
-    <!-- ===== HEADER ===== -->
-    <div class="layout-header" id="sticky-navbar">
-        <div class="container">
-            <div class="wrapper">
-                <h1 class="logo">manaqin</h1>
-                <div class="menu-items">
-                    <a class="item" href="/">Forside</a>
-                    <a class="item" href="/feature.html">Funktioner</a>
-                    <a class="item" href="/price.html">Priser</a>
-                    <a class="item" href="#">Log ind</a>
-                    <button class="btn item button">Prøv gratis nu</button>
-                </div>
+    <body>
+        <div>
+            <!-- ===== HEADER ===== -->
+            <div class="layout-header" id="sticky-navbar">
+                <div class="container">
+                    <div class="wrapper">
+                        <h1 class="logo">manaqin</h1>
+                        <div class="menu-items">
+                            <a class="item" href="/">Forside</a>
+                            <a class="item" href="/feature.html">Funktioner</a>
+                            <a class="item" href="/price.html">Priser</a>
+                            <a class="item" href="#">Log ind</a>
+                            <button class="btn item button">Prøv gratis nu</button>
+                        </div>
 
-                <img class="menu-xs-icon menu-xs-icon-white d-block d-md-none menu-toggle"
-                     src="./resources/assets/images/menu.svg"/>
-                <img class="menu-xs-icon menu-xs-icon-blue menu-toggle"
-                     src="./resources/assets/images/menu-blue.svg"/>
-            </div>
+                        <img class="menu-xs-icon menu-xs-icon-white d-block d-md-none menu-toggle" src="./resources/assets/images/menu.svg" alt="menu icon" />
+                        <img class="menu-xs-icon menu-xs-icon-blue menu-toggle" src="./resources/assets/images/menu-blue.svg" alt="menu icon" />
+                    </div>
 
-            <!-- [sm-down] Mobile menu -->
-            <div class="menu-xs d-md-none">
-                <img class="menu-close menu-toggle" src="./resources/assets/images/close.svg"/>
-                <i class="menu-close menu-toggle"></i>
-                <div class="menu-container links">
-                    <a class="item" href="/">Forside</a>
-                    <a class="item" href="/feature.html">Funktioner</a>
-                    <a class="item" href="/price.html">Priser</a>
-                    <a class="item" href="#">Log ind</a>
-                    <button class="btn large button blue">Prøv gratis nu</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- ===== MAIN CONTENT ===== -->
-    <div class="layout-content">
-        <div class="section-landing">
-            <div class="container">
-                <h3 class="main-header">Nogle af dine kunder er frustrerede og overvejer at forlade din forretning</h3>
-                <p class="main-subheader">Ved du hvem, hvor mange og hvorfor? Med automatiserede NPS®-målinger fra
-                    Manaqin får du svaret
-                    allerede i dag.</p>
-
-                <button class="btn button green large">Prøv gratis nu</button>
-
-                <div class="d-flex ssl-section">
-                    <img src="./resources/assets/images/lock.svg" alt="lock icon"/>
-                    <span>100% SSL krypteret kommunikation </span>
-                </div>
-
-                <div class="quote-section">
-                    <p class="quote">“Vi har aldrig oplevet så glade kunder tidligere”</p>
-                    <p class="author">METTE LAURSEN - indehaver @beautyfi</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="section-facts">
-            <div class="container">
-                <h3 class="header text-center">Mere fakta og mindre mavefornemmelse</h3>
-                <p class="description mt-5 text-center">Hvem er din virksomhed ambassadører og hvem hæmmer virksomhedens
-                    vækst med
-                    negativ omtale? Hvad kan dine kunder lide og hvad ville de ønske, at du gjorde anderledes? Få svaret
-                    med <i>det ultimative spørgsmål</i>: “Hvor sandsynlig er det, at du vil anbefale os til en ven eller
-                    kollega?” Svarene inddeles i 3 grupper </p>
-
-                <div class="facts-list">
-                    <div class="item fact-promoter">
-                        <div class="wrapper">
-                            <p class="description title">Promoters (9-10)</p>
-                            <p class="description description-32">På dansk fortalere, er loyale kunder, der bliver ved
-                                med at købe og er villige til at anbefale din virksomhed, produkter eller service til
-                                andre.
-                            </p>
+                    <!-- [sm-down] Mobile menu -->
+                    <div class="menu-xs d-md-none">
+                        <img class="menu-close menu-toggle" src="./resources/assets/images/close.svg" alt="close icon" />
+                        <i class="menu-close menu-toggle"></i>
+                        <div class="menu-container links">
+                            <a class="item" href="/">Forside</a>
+                            <a class="item" href="/feature.html">Funktioner</a>
+                            <a class="item" href="/price.html">Priser</a>
+                            <a class="item" href="#">Log ind</a>
+                            <button class="btn large button blue">Prøv gratis nu</button>
                         </div>
                     </div>
-                    <div class="item fact-passive">
-                        <div class="wrapper">
-                            <p class="description title">Passives (7-8)</p>
-                            <p class="description description-32">På dansk passivt tilfredse, er tilfredse men uden
-                                særlig præference for din virksomhed, og disse kunne lokkes over af dine konkurrenter
-                                med fx billigere priser.
-                            </p>
+                </div>
+            </div>
+
+            <!-- ===== MAIN CONTENT ===== -->
+            <div class="layout-content">
+                <div class="section-landing">
+                    <div class="container">
+                        <h3 class="main-header">Nogle af dine kunder er frustrerede og overvejer at forlade din forretning</h3>
+                        <p class="main-subheader">Ved du hvem, hvor mange og hvorfor? Med automatiserede NPS®-målinger fra Manaqin får du svaret allerede i dag.</p>
+
+                        <button class="btn button green large">Prøv gratis nu</button>
+
+                        <div class="d-flex ssl-section">
+                            <img src="./resources/assets/images/lock.svg" alt="lock icon" />
+                            <span>100% SSL krypteret kommunikation </span>
                         </div>
-                    </div>
-                    <div class="item fact-detractor">
-                        <div class="wrapper">
-                            <p class="description title">Detractors (0-6)</p>
-                            <p class="description description-32 ">På dansk bagvaskere, er utilfredse kunder, der kan
-                                skade virksomhedens brand og er en stopklods for virksomhedens vækst gennem negativ
-                                omtale.
-                            </p>
+
+                        <div class="quote-section">
+                            <p class="quote">“Vi har aldrig oplevet så glade kunder tidligere”</p>
+                            <p class="author">METTE LAURSEN - indehaver @beautyfi</p>
                         </div>
                     </div>
                 </div>
 
-                <p class="description description-24 text-center">NPS er en international standard for måling af
-                    kundetilfredshed udarbejdet af Fred Reichheld.</p>
-
-                <p class="description description-24 mt-1 text-center">NPS®, Net Promoter® og Net Promoter® Score er
-                    registrerede varemærker tilhørende Satmetrix Systems, Inc., Bain & Company og Fred Reichheld.</p>
-
-                <img src="./resources/assets/images/line-background.svg" class="line-background" alt="line"/>
-            </div>
-        </div>
-
-        <div class="section-feedback">
-            <div class="container">
-                <div class="wrapper">
-                    <div class="texts">
-                        <h3 class="header">Feedback, der skaber vækst</h3>
-                        <p class="description description-32 mt-5">Topleder verden over anvender NPS til at måle
-                            kundeloyaliteten,
-                            fordi
-                            metoden er gennemtestet, effekten er dokumenteret, og resultatet kan måles på bundlinjen. Nu
-                            kan
-                            du
-                            også identificere og handle på de områder, hvor kundetilfredsheden og dermed bundlinjen kan
-                            forbedres.</p>
-                        <p class="description description-32 mt-5">Farvel til alenlange spørgeskemaundersøgelser og hej
-                            til
-                            øjeblikkelig og
-                            brugbar feedback. Opsætning tager blot nogle få minutter og kræver ingen teknisk
-                            erfaring.</p>
-                        <p class="description description-32 mt-5">Du får indblik i hvorvidt og hvad er dine kunder er
-                            tilfredse eller
-                            utilfredse med - brug indsigten til opbygge din virksomheds relationer, reducere
-                            kundefrafald og
-                            øge
-                            væksten i din forretning.</p>
-                    </div>
-                    <img class="image" src="./resources/assets/images/feedback.png" alt="user in phone with plant"/>
-                </div>
-            </div>
-        </div>
-
-        <div class="section-integrate">
-            <div class="container">
-                <div class="wrapper">
-                    <img class="image" src="./resources/assets/images/integrate.png" alt="person holding a phone"/>
-                    <div class="texts">
-                        <h3 class="header">Integrere direkte med dit regnskabssystem</h3>
-                        <p class="description description-32 mt-5">Når dine kunder handler med dig, indsamles feedback
-                            automatisk via
-                            en
-                            direkte integration med dit regnskabsprogram og du får omgående præsenteret kundernes
-                            feedback
-                            på en let og overskuelig måde.
+                <div class="section-facts">
+                    <div class="container">
+                        <h3 class="header text-center">Mere fakta og mindre mavefornemmelse</h3>
+                        <p class="description mt-5 text-center">
+                            Hvem er din virksomhed ambassadører og hvem hæmmer virksomhedens vækst med negativ omtale? Hvad kan dine kunder lide og hvad ville de ønske, at du gjorde anderledes? Få
+                            svaret med <i>det ultimative spørgsmål</i>: “Hvor sandsynlig er det, at du vil anbefale os til en ven eller kollega?” Svarene inddeles i 3 grupper
                         </p>
 
-                        <a class="description description-32" href="#">Prøv gratis i dag</a>
+                        <div class="facts-list">
+                            <div class="item fact-promoter">
+                                <div class="wrapper">
+                                    <p class="description title">Promoters (9-10)</p>
+                                    <p class="description description-32">
+                                        På dansk fortalere, er loyale kunder, der bliver ved med at købe og er villige til at anbefale din virksomhed, produkter eller service til andre.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="item fact-passive">
+                                <div class="wrapper">
+                                    <p class="description title">Passives (7-8)</p>
+                                    <p class="description description-32">
+                                        På dansk passivt tilfredse, er tilfredse men uden særlig præference for din virksomhed, og disse kunne lokkes over af dine konkurrenter med fx billigere priser.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="item fact-detractor">
+                                <div class="wrapper">
+                                    <p class="description title">Detractors (0-6)</p>
+                                    <p class="description description-32">
+                                        På dansk bagvaskere, er utilfredse kunder, der kan skade virksomhedens brand og er en stopklods for virksomhedens vækst gennem negativ omtale.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
 
-                        <div class="brands d-flex align-items-center">
-                            <img src="./resources/assets/images/brand-dinero.png"/>
-                            <img src="./resources/assets/images/brand-economic.png"/>
-                            <img src="./resources/assets/images/brand-billy.png"/>
-                            <img src="./resources/assets/images/brand-shopify.png"/>
+                        <p class="description description-24 text-center">NPS er en international standard for måling af kundetilfredshed udarbejdet af Fred Reichheld.</p>
+
+                        <p class="description description-24 mt-1 text-center">
+                            NPS®, Net Promoter® og Net Promoter® Score er registrerede varemærker tilhørende Satmetrix Systems, Inc., Bain & Company og Fred Reichheld.
+                        </p>
+
+                        <img src="./resources/assets/images/line-background.svg" class="line-background" alt="line" />
+                    </div>
+                </div>
+
+                <div class="section-feedback">
+                    <div class="container">
+                        <div class="wrapper">
+                            <div class="texts">
+                                <h3 class="header">Feedback, der skaber vækst</h3>
+                                <p class="description description-32 mt-5">
+                                    Topleder verden over anvender NPS til at måle kundeloyaliteten, fordi metoden er gennemtestet, effekten er dokumenteret, og resultatet kan måles på bundlinjen. Nu
+                                    kan du også identificere og handle på de områder, hvor kundetilfredsheden og dermed bundlinjen kan forbedres.
+                                </p>
+                                <p class="description description-32 mt-5">
+                                    Farvel til alenlange spørgeskemaundersøgelser og hej til øjeblikkelig og brugbar feedback. Opsætning tager blot nogle få minutter og kræver ingen teknisk erfaring.
+                                </p>
+                                <p class="description description-32 mt-5">
+                                    Du får indblik i hvorvidt og hvad er dine kunder er tilfredse eller utilfredse med - brug indsigten til opbygge din virksomheds relationer, reducere kundefrafald og
+                                    øge væksten i din forretning.
+                                </p>
+                            </div>
+                            <img class="image" src="./resources/assets/images/feedback.png" alt="user in phone with plant" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-integrate">
+                    <div class="container">
+                        <div class="wrapper">
+                            <img class="image" src="./resources/assets/images/integrate.png" alt="person holding a phone" />
+                            <div class="texts">
+                                <h3 class="header">Integrere direkte med dit regnskabssystem</h3>
+                                <p class="description description-32 mt-5">
+                                    Når dine kunder handler med dig, indsamles feedback automatisk via en direkte integration med dit regnskabsprogram og du får omgående præsenteret kundernes feedback
+                                    på en let og overskuelig måde.
+                                </p>
+
+                                <a class="description description-32" href="#">Prøv gratis i dag</a>
+
+                                <div class="brands d-flex align-items-center">
+                                    <img src="./resources/assets/images/brand-dinero.png" alt="dinero icon" />
+                                    <img src="./resources/assets/images/brand-economic.png" alt="economic icon" />
+                                    <img src="./resources/assets/images/brand-billy.png" alt="billy icon" />
+                                    <img src="./resources/assets/images/brand-shopify.png" alt="shopify icon" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-loyal-customers">
+                    <div class="container">
+                        <div class="wrapper">
+                            <div class="texts">
+                                <h3 class="header">Loyale kunder er dine bedste sælgere</h3>
+
+                                <p class="description description-32 mt-5">Indsaml pålidelige anmeldelser fra dine kunder, der fremhæver de gode sider af din virksomhed.</p>
+
+                                <p class="description description-32 mt-5">80-90 % af en virksomheds anbefalinger kommer typisk fra dine promoters, som er virksomhedens mest loyale kunder.</p>
+
+                                <p class="description description-32 mt-5">
+                                    Engagér dig med dine Promotors og giv dem værktøjerne til at sprede budskabet om din virksomhed. Udnyt kundeloyalitet aktivt til glæde og gavn for din virksomhed.
+                                </p>
+                            </div>
+                            <img class="image" src="./resources/assets/images/loyal-customers.png" alt="a person standing and a person sitting" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-locate">
+                    <div class="container">
+                        <div class="wrapper">
+                            <img class="image" src="./resources/assets/images/locate.png" alt="person holding a phone" />
+                            <div class="texts">
+                                <h3 class="header">Lokalisere dine udfordringer før de bliver et problem</h3>
+
+                                <p class="description description-32 mt-5">
+                                    Når du får feedback fra dine kunder, får du lokaliseret problemer, som du ikke har været opmærksom før. Alle virksomheder har nogle utilfredse kunder - sikkert også
+                                    din. Spørgsmålet er om du kan gøre noget for at de ikke også forhindrer andre i at handle med dig?
+                                </p>
+                                <p class="description description-32 mt-5">
+                                    Vi giver dig en kanal til at forstå kundernes frustrationer og handle på dem ved at fremhæve, hvem af dine kunder der er i farezonen, og hvilke punkter der har
+                                    udløst deres utilfredshed.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-features">
+                    <div class="container">
+                        <h3 class="header text-center">Manaqin har alle de funktioner, du har brug for</h3>
+                        <p class="description mt-5 text-center">
+                            Vi har brugt oceaner af tid på at udvikle Manaqin, så du får adgang til en lang række funktioner og udvidelser, som optimerer dit arbejde med virksomhedensomdømme og øge
+                            din omsætning.
+                        </p>
+
+                        <div class="features-list">
+                            <div class="item">
+                                <img src="./resources/assets/images/works-on-all-platforms.svg" alt="platform icon" />
+                                <p class="description title">Virker på alle platforme</p>
+                                <p class="description description-32">Spørgeskemeat er optimeret til desktop-, tablet- og mobilløsninger og virker fejlfrit på alle platforme.</p>
+                            </div>
+                            <div class="item">
+                                <img src="./resources/assets/images/higher-response-rates.svg" alt="higher-response-rates icon" />
+                                <p class="description title">15x højere svarprocenter</p>
+                                <p class="description description-32">Vi har tunet og optimeret vores pletform. Derfor genererer vi svarprocenter, der er op til 15x højere end industristandarden.</p>
+                            </div>
+                            <div class="item">
+                                <img src="./resources/assets/images/we-handle-the-delivery.svg" alt="we-handle-the-delivery.svg icon" />
+                                <p class="description title">Vi klarer leveringen</p>
+                                <p class="description description-32">
+                                    Vi klarer alle de små justeringer og detaljer i forbindelse og levering af spørgeskemaet. Du giver os e-mail adresserne og vi klarer resten.
+                                </p>
+                            </div>
+                            <div class="item">
+                                <img src="./resources/assets/images/plug-and-play.svg" alt="plug-and-play" />
+                                <p class="description title">Plug ’n play</p>
+                                <p class="description description-32">Integrere med dit foretrukne CRM-, bogføringsprogram eller tilpas din helt egen integration ved hjælp af vores API.</p>
+                            </div>
+                            <div class="item">
+                                <img src="./resources/assets/images/optimized-frequency.svg" alt="optimized-frequency" />
+                                <p class="description title">Optimeret frekvens</p>
+                                <p class="description description-32">Kunder der allerede er har modtaget spørgeskemaet bliver ikke spurgt igen inden for en given tidsperiode.</p>
+                            </div>
+                            <div class="item">
+                                <img src="./resources/assets/images/your-brand-your-questionnaire.svg" alt="your-brand-your-questionnaire" />
+                                <p class="description title">Dit brand - dit spørgeskema</p>
+                                <p class="description description-32">Ved hjælp af dit logo, virksomhedens farve og et par simple valg vil spørgeskemeat passe perfekt til dit brand.s</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-relationships">
+                    <div class="container">
+                        <div class="wrapper">
+                            <div class="content">
+                                <h3 class="header text-white">Relationer er livsvigtige - også for virksomheder</h3>
+                                <p class="description description-32 mt-4 text-white">
+                                    Med Manaqin får du en løbende strøm af værdifuld information direkte fra dine kunder så du hurtigt kan identificere og handle på eventuelle trusler mod din
+                                    virksomhed og styrke forholdet til dine kunder.
+                                </p>
+
+                                <button class="btn button large mt-5">Prøv gratis nu</button>
+                            </div>
+                            <div class="image"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== FOOTER ===== -->
+            <div class="layout-footer">
+                <div class="container">
+                    <div class="question-wrapper my-5">
+                        <div class="texts">
+                            <h3 class="header header-46">Er du klar til at få dine kunders ærlige mening?</h3>
+                            <p class="description description-42 mt-3">Få overblik over kundernes holdning til din virksomhed og reagere på eventuel negativ feedback, før der bliver et problem</p>
+                        </div>
+                        <button class="btn button large blue">Prøv gratis nu</button>
+                    </div>
+
+                    <hr />
+
+                    <div class="row my-5 pb-5 main-content">
+                        <div class="col-lg-4 contact-details">
+                            <p class="logo-text">manaqin</p>
+                            <p class="description description-30 mt-4">Emdrupvej 28A</p>
+                            <p class="description description-30 mt-2">2100 København</p>
+                            <p class="description description-30 mt-2">CVR: 34451648</p>
+                        </div>
+                        <div class="col-lg-8 footer-menu-links mt-sm-5 mt-lg-0">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-3 mt-5 mt-sm-0">
+                                    <p class="description description-30 title">PRODUKTET</p>
+                                    <a href="#" class="description description-30 mt-4">Funktioner</a>
+                                    <a href="#" class="description description-30 mt-2">Priser</a>
+                                    <a href="#" class="description description-30 mt-2">Hvad er NPS?</a>
+                                </div>
+                                <div class="col-sm-6 col-md-3 mt-5 mt-sm-0">
+                                    <p class="description description-30 title">FIRMAET</p>
+                                    <a href="#" class="description description-30 mt-4">LinkedIn</a>
+                                    <a href="#" class="description description-30 mt-2">Facebook</a>
+                                    <a href="#" class="description description-30 mt-2">Ledige stillinger</a>
+                                </div>
+                                <div class="col-sm-6 col-md-3 mt-5 mt-md-0">
+                                    <p class="description description-30 title">JURDISK</p>
+                                    <a href="#" class="description description-30 mt-4">Handelsbetingelser</a>
+                                    <a href="#" class="description description-30 mt-2">Privatlivspolitik</a>
+                                    <a href="#" class="description description-30 mt-2">GDPR</a>
+                                </div>
+                                <div class="col-sm-6 col-md-3 mt-5 mt-md-0">
+                                    <p class="description description-30 title">KONTAKT</p>
+                                    <a href="mailto:hello@manaqin.com" class="description description-30 mt-4">hello@manaqin.com</a>
+                                    <a href="tel:+4591525298" class="description description-30 mt-2">2100 København</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
+                    <hr />
+
+                    <div class="footer-note-container mt-5">
+                        <p class="description description-24 footer-note mr-md-5">
+                            NPS er en international standard for måling af kundetilfredshed udarbejdet af Fred Reichheld. NPS®, Net Promoter® og Net Promoter® Score er registrerede varemærker
+                            tilhørende Satmetrix Systems, Inc., Bain & Company og Fred Reichheld. Copyright © Manaqin 2019 CVR 34451648
+                        </p>
+
+                        <div class="ui fluid selection dropdown language-selection">
+                            <input type="hidden" name="user" />
+                            <i class="dropdown icon"></i>
+                            <div class="text"><img class="ui mini avatar image" src="./resources/assets/images/flag-denmark.png" alt="Denmark flag" />Danmark</div>
+                            <div class="menu">
+                                <div class="item active" data-value="danmark"><img class="ui mini avatar image" src="./resources/assets/images/flag-denmark.png" alt="Danmark flag" />Danmark</div>
+                                <div class="item" data-value="language-1">
+                                    <img class="ui mini avatar image" src="./resources/assets/images/flag-united-kingdom.png" alt="United Kingdom flag" />United Kingdom
+                                </div>
+                                <div class="item" data-value="language-2"><img class="ui mini avatar image" src="./resources/assets/images/flag-japan.png" alt="Japan flag" />Japan</div>
+                                <div class="item" data-value="language-3"><img class="ui mini avatar image" src="./resources/assets/images/flag-spain.png" alt="Spain flag" />Spain</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="section-loyal-customers">
-            <div class="container">
-                <div class="wrapper">
-                    <div class="texts">
-                        <h3 class="header">Loyale kunder er dine bedste sælgere</h3>
+        <!-- Required JS -->
+        <script src="./resources/vendors/jquery/jquery.min.js"></script>
+        <script src="./resources/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="./resources/vendors/semantic-ui/transition.min.js"></script>
+        <script src="./resources/vendors/semantic-dropdown/dropdown.min.js"></script>
+        <script src="https://cdn.rawgit.com/JacobLett/IfBreakpoint/e9fcd4fd/if-b4-breakpoint.min.js"></script>
 
-                        <p class="description description-32 mt-5">Indsaml pålidelige anmeldelser fra dine kunder, der
-                            fremhæver de gode sider af din virksomhed.</p>
-
-                        <p class="description description-32 mt-5">80-90 % af en virksomheds anbefalinger kommer typisk
-                            fra dine promoters, som er virksomhedens mest loyale kunder.</p>
-
-                        <p class="description description-32 mt-5">Engagér dig med dine Promotors og giv dem værktøjerne
-                            til at sprede budskabet om din virksomhed. Udnyt kundeloyalitet aktivt til glæde og gavn for
-                            din virksomhed.</p>
-                    </div>
-                    <img class="image" src="./resources/assets/images/loyal-customers.png"
-                         alt="a person standing and a person sitting"/>
-                </div>
-            </div>
-        </div>
-
-        <div class="section-locate">
-            <div class="container">
-                <div class="wrapper">
-                    <img class="image" src="./resources/assets/images/locate.png" alt="person holding a phone"/>
-                    <div class="texts">
-                        <h3 class="header">Lokalisere dine udfordringer før de bliver et problem</h3>
-
-                        <p class="description description-32 mt-5">Når du får feedback fra dine kunder, får du
-                            lokaliseret problemer, som du ikke har været opmærksom før.
-                            Alle virksomheder har nogle utilfredse kunder - sikkert også din. Spørgsmålet er om du kan
-                            gøre noget for at de ikke også forhindrer andre i at handle med dig?</p>
-                        <p class="description description-32 mt-5">Vi giver dig en kanal til at forstå kundernes
-                            frustrationer og handle på dem ved at fremhæve, hvem af dine kunder der er i farezonen, og
-                            hvilke punkter der har udløst deres utilfredshed.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="section-features">
-            <div class="container">
-                <h3 class="header text-center">Manaqin har alle de funktioner, du har brug for</h3>
-                <p class="description mt-5 text-center">Vi har brugt oceaner af tid på at udvikle Manaqin, så du får
-                    adgang til en lang række funktioner og udvidelser, som optimerer dit arbejde med
-                    virksomhedensomdømme og øge din omsætning.</p>
-
-                <div class="features-list">
-                    <div class="item">
-                        <img src="./resources/assets/images/works-on-all-platforms.svg"/>
-                        <p class="description title">Virker på alle platforme</p>
-                        <p class="description description-32">Spørgeskemeat er optimeret til desktop-, tablet- og
-                            mobilløsninger og virker fejlfrit på alle platforme.</p>
-                    </div>
-                    <div class="item">
-                        <img src="./resources/assets/images/higher-response-rates.svg"/>
-                        <p class="description title">15x højere svarprocenter</p>
-                        <p class="description description-32">Vi har tunet og optimeret vores pletform. Derfor genererer
-                            vi svarprocenter, der er op til 15x højere end industristandarden.</p>
-                    </div>
-                    <div class="item">
-                        <img src="./resources/assets/images/we-handle-the-delivery.svg"/>
-                        <p class="description title">Vi klarer leveringen</p>
-                        <p class="description description-32">Vi klarer alle de små justeringer og detaljer i
-                            forbindelse og levering af spørgeskemaet. Du giver os e-mail adresserne og vi klarer
-                            resten.</p>
-                    </div>
-                    <div class="item">
-                        <img src="./resources/assets/images/plug-and-play.svg"/>
-                        <p class="description title">Plug ’n play</p>
-                        <p class="description description-32">Integrere med dit foretrukne CRM-, bogføringsprogram eller
-                            tilpas din helt egen integration ved hjælp af vores API.</p>
-                    </div>
-                    <div class="item">
-                        <img src="./resources/assets/images/optimized-frequency.svg"/>
-                        <p class="description title">Optimeret frekvens</p>
-                        <p class="description description-32">Kunder der allerede er har modtaget spørgeskemaet bliver
-                            ikke spurgt igen inden for en given tidsperiode.</p>
-                    </div>
-                    <div class="item">
-                        <img src="./resources/assets/images/your-brand-your-questionnaire.svg"/>
-                        <p class="description title">Dit brand - dit spørgeskema</p>
-                        <p class="description description-32">Ved hjælp af dit logo, virksomhedens farve og et par
-                            simple valg vil spørgeskemeat passe perfekt til dit brand.s</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="section-relationships">
-            <div class="container">
-                <d class="wrapper">
-                    <div class="content">
-                        <h3 class="header text-white">Relationer er livsvigtige - også for virksomheder</h3>
-                        <p class="description description-32 mt-4 text-white">Med Manaqin får du en løbende strøm af
-                            værdifuld
-                            information direkte fra dine kunder så du hurtigt kan identificere og handle på eventuelle
-                            trusler mod din virksomhed og styrke forholdet til dine kunder.</p>
-
-                        <button class="btn button large mt-5">Prøv gratis nu</button>
-                    </div>
-                    <div class="image"></div>
-                </d>
-            </div>
-        </div>
-    </div>
-
-    <!-- ===== FOOTER ===== -->
-    <div class="layout-footer">
-        <div class="container">
-            <div class="question-wrapper my-5">
-                <div class="texts">
-                    <h3 class="header header-46">Er du klar til at få dine kunders ærlige mening? </h3>
-                    <p class="description description-42 mt-3">Få overblik over kundernes holdning til din virksomhed og
-                        reagere på eventuel negativ feedback, før der bliver et problem</p>
-                </div>
-                <button class="btn button large blue">Prøv gratis nu</button>
-            </div>
-
-            <hr/>
-
-            <div class="row my-5 pb-5 main-content">
-                <div class="col-lg-4 contact-details">
-                    <p class="logo-text">manaqin</p>
-                    <p class="description description-30 mt-4">Emdrupvej 28A</p>
-                    <p class="description description-30 mt-2">2100 København</p>
-                    <p class="description description-30 mt-2">CVR: 34451648</p>
-                </div>
-                <div class="col-lg-8 footer-menu-links mt-sm-5 mt-lg-0">
-                    <div class="row">
-                        <div class="col-sm-6 col-md-3 mt-5 mt-sm-0">
-                            <p class="description description-30 title">PRODUKTET</p>
-                            <a href="#" class="description description-30 mt-4">Funktioner</a>
-                            <a href="#" class="description description-30 mt-2">Priser</a>
-                            <a href="#" class="description description-30 mt-2">Hvad er NPS?</a>
-                        </div>
-                        <div class="col-sm-6 col-md-3 mt-5 mt-sm-0">
-                            <p class="description description-30 title">FIRMAET</p>
-                            <a href="#" class="description description-30 mt-4">LinkedIn</a>
-                            <a href="#" class="description description-30 mt-2">Facebook</a>
-                            <a href="#" class="description description-30 mt-2">Ledige stillinger</a>
-                        </div>
-                        <div class="col-sm-6 col-md-3 mt-5 mt-md-0">
-                            <p class="description description-30 title">JURDISK</p>
-                            <a href="#" class="description description-30 mt-4">Handelsbetingelser</a>
-                            <a href="#" class="description description-30 mt-2">Privatlivspolitik</a>
-                            <a href="#" class="description description-30 mt-2">GDPR</a>
-                        </div>
-                        <div class="col-sm-6 col-md-3 mt-5 mt-md-0">
-                            <p class="description description-30 title">KONTAKT</p>
-                            <a href="mailto:hello@manaqin.com"
-                               class="description description-30 mt-4">hello@manaqin.com</a>
-                            <a href="tel:+4591525298" class="description description-30 mt-2">2100 København</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <hr/>
-
-            <div class="footer-note-container mt-5">
-                <p class="description description-24 footer-note mr-md-5">
-                    NPS er en international standard for måling af kundetilfredshed udarbejdet af Fred Reichheld. NPS®,
-                    Net Promoter® og Net Promoter® Score er registrerede varemærker tilhørende Satmetrix Systems, Inc.,
-                    Bain & Company og Fred Reichheld.
-                    Copyright © Manaqin 2019 CVR 34451648
-                </p>
-
-                <div class="ui fluid selection dropdown language-selection">
-                    <input type="hidden" name="user">
-                    <i class="dropdown icon"></i>
-                    <div class="text">
-                        <img class="ui mini avatar image" src="./resources/assets/images/flag-denmark.png">Danmark
-                    </div>
-                    <div class="menu">
-                        <div class="item active" data-value="danmark">
-                            <img class="ui mini avatar image" src="./resources/assets/images/flag-denmark.png">Danmark
-                        </div>
-                        <div class="item" data-value="language-1">
-                            <img class="ui mini avatar image" src="./resources/assets/images/flag-united-kingdom.png">United
-                            Kingdom
-                        </div>
-                        <div class="item" data-value="language-2">
-                            <img class="ui mini avatar image" src="./resources/assets/images/flag-japan.png">Japan
-                        </div>
-                        <div class="item" data-value="language-3">
-                            <img class="ui mini avatar image" src="./resources/assets/images/flag-spain.png">Spain
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Required JS -->
-<script src="./resources/vendors/jquery/jquery.min.js"></script>
-<script src="./resources/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="./resources/vendors/semantic-ui/transition.min.js"></script>
-<script src="./resources/vendors/semantic-dropdown/dropdown.min.js"></script>
-<script src='https://cdn.rawgit.com/JacobLett/IfBreakpoint/e9fcd4fd/if-b4-breakpoint.min.js'></script>
-
-<!-- Custom JS -->
-<script src="./resources/js/main.js"></script>
-
-</body>
+        <!-- Custom JS -->
+        <script src="./resources/js/main.js"></script>
+    </body>
 </html>

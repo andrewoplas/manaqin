@@ -1,21 +1,22 @@
 {
-  "name": "managin",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "pscss": "prettier --write './resources/**/*.scss'",
-    "scss": "sass --watch --no-source-map resources/scss:resources/css"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "bootstrap": "^4.5.2"
-  },
-  "devDependencies": {
-    "prettier": "^2.1.1",
-    "sass": "^1.26.10"
-  }
+    "name": "managin",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "pscss": "prettier --write './resources/**/*.scss'",
+        "phtml": "prettier --write '*.html'",
+        "scss": "sass --watch --no-source-map resources/scss:resources/css"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "bootstrap": "^4.5.2"
+    },
+    "devDependencies": {
+        "prettier": "^2.1.1",
+        "sass": "^1.26.10"
+    }
 }
